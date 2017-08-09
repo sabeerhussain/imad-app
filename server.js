@@ -15,7 +15,12 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/article-one',function(req, res){
     res.send('article one willl be published soon');
 });
-    
+    app.get('/article-two',function(req, res){
+    res.send('article two willl be published soon');
+});
+app.get('/article-three',function(req, res){
+    res.send('article three willl be published soon');
+});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
